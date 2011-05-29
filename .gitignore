@@ -1,0 +1,21 @@
+# By default, ignore all files in Drupal root directory.
+www/*.*
+
+# Ignore all Drupal folders.
+www/includes
+www/misc
+www/modules
+www/scripts
+www/sites
+www/themes
+www/profiles
+
+# Exceptions inside Drupal files (custom code).
+!www/sites/all/modules/custom
+!www/sites/all/themes/custom
+!www/sites/all/libraries/custom
+# You will want to use your custom profile's real name below.
+#!www/profiles/project
+
+# Uncomment following line if modifying Drupal's .htaccess ?
+#!www/.htaccess
