@@ -1,6 +1,5 @@
 #!/bin/sh
-
-DRUSHPATH=${HOME}/.drush/drush/drush;
+TRANSLATIONS=fr
 
 # Detect PATH
 cd "`dirname $0`";
@@ -10,4 +9,4 @@ cd "${ROOTPATH}"
 ROOTPATH=`pwd`;
 
 cd ${ROOTPATH}/www;
-${DRUSHPATH} make -y ${BASENAME}/project.make;
+drush make -y --translations="${TRANSLATIONS}" ${BASENAME}/project.make;
