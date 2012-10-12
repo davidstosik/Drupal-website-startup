@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ *
+ * Custom module main file.
+ */
+
+/**
+ * Implements hook_menu()
+ */
+function acustom_menu() {
+  $items = array();
+
+
+  return $items;
+}
+

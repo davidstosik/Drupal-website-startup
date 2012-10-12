@@ -19,6 +19,11 @@ api = 2
 
 projects[] = drupal
 
+; If using Pressflow instead of Drupal core:
+; projects[pressflow][type] = "core"
+; projects[pressflow][download][type] = "file"
+; projects[pressflow][download][url] = "http://to-be-filled.tar.gz"
+
 ; Projects
 ; --------
 ; Each project that you would like to include in the makefile should be
@@ -27,14 +32,42 @@ projects[] = drupal
 ; Modules
 ; -------
 
+; Essential modules
 projects[] = token
 projects[] = pathauto
 projects[] = ctools
 projects[] = views
-projects[] = wysiwyg
+projects[] = whois
+projects[] = title
+projects[] = name
+projects[] = email
+projects[] = phone
+projects[] = field_group
+
+; Use dev release until the features integration is released with 2.2.
+projects[wysiwyg][version] = 2.x-dev
+
+; Languages
+projects[] = l10n_update
+
+; Configuration saving
 projects[] = features
-; Waiting for a stable release off Strongarm
-projects[strongarm] = 2.0-beta2
+projects[] = features_extra
+projects[] = strongarm
+projects[] = entity
+
+; Others
+projects[] = admin_menu
+projects[] = adsense
+projects[] = google_analytics
+projects[] = link
+
+; Video
+projects[] = vimeo_link_formatter
+projects[] = youtube
+
+; Tools
+projects[] = libraries
 
 ; Themes
 ; ------
@@ -47,5 +80,6 @@ projects[] = omega
 ; components) should be declared under the `libraries` key.
 
 libraries[tinymce][download][type] = "file"
-libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip"
+libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.5.6.zip"
 libraries[tinymce][directory_name] = "tinymce"
+

@@ -1,0 +1,6 @@
+name = A-Custom
+description = Alethia custom module stub
+core = 7.x
+package = Alethia
+version = "7.x-0.1"
+;dependencies[] = 

@@ -1,0 +1,28 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the node module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function acustom_schema() {
+  $schema['acustom'] = array(
+    
+  );
+
+  return $schema;
+}
+
+/**
+ * Implements hook_install().
+ */
+function acustom_install() {
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function acustom_uninstall() {
+}
