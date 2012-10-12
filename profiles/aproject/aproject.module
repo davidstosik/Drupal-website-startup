@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Enables modules and site configuration for joinup portal installation.
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function joinup_form_alter(&$form, $form_state, $form_id) {
+}

@@ -1,0 +1,52 @@
+name = A-Profile
+description = Standard Alethia profile stub.
+version = VERSION
+core = 7.x
+
+; Core modules dependencies
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = options
+dependencies[] = path
+dependencies[] = statistics
+dependencies[] = taxonomy
+dependencies[] = translation
+dependencies[] = file
+dependencies[] = search
+
+; Contrib dependencies
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = link
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = computed_field
+dependencies[] = fe_block
+dependencies[] = whois
+dependencies[] = field_validation
+dependencies[] = title
+dependencies[] = name
+dependencies[] = email
+dependencies[] = field_group
+
+; Video
+dependencies[] = vimeo_link_formatter
+dependencies[] = youtube
+
+; Analytics
+dependencies[] = googleanalytics
+
+; Custom code
+dependencies[] = acustom
