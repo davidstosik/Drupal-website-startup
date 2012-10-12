@@ -1,24 +1,34 @@
 # Ignore all core Drupal files.
-www/*.*
-www/includes
-www/misc
-www/modules
-www/scripts
-www/themes
-www/profiles/*
-www/sites/*/modules/*
-www/sites/*/themes/*
-www/sites/*/libraries/*
-www/sites/all/README.txt
-www/sites/default/default.settings.php
-www/sites/example.sites.php
+/*.*
+/includes
+/misc
+/modules
+/scripts
+/themes
+/translations
+/profiles/*
+/sites/default/*
+/sites/*/modules/*
+/sites/*/themes/*
+/sites/*/libraries/*
+/sites/all/README.txt
+/sites/example.sites.php
 
 # Exceptions inside Drupal files (custom code).
-!www/sites/*/modules/custom
-!www/sites/*/themes/custom
-!www/sites/*/libraries/custom
+# Needed only when you can't put your custom code in the profile
+# (multi-profile project).
+#!/sites/*/modules/custom
+#!/sites/*/themes/custom
+#!/sites/*/libraries/custom
+
 # You will want to use your custom profile's real name below.
-!www/profiles/project
+!/profiles/joinup
+
+# We tweaked settings.php so that it does not contain database credentials,
+# and can be commited to Git repository.
+!/sites/*/*settings.php
+/sites/default/db.settings.php
+/sites/default/default.settings.php
 
 # Uncomment following line if modifying Drupal's .htaccess ?
-#!www/.htaccess
+#!/.htaccess
